@@ -1,0 +1,22 @@
+{
+  "name": "vedam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha vedamtest.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "google-auth-library": "^0.9.10",
+    "googleapis": "^15.0.0",
+    "nodemailer": "^2.7.0",
+    "nodemailer-smtp-transport": "^2.7.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
