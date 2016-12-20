@@ -10,19 +10,21 @@ var testData= [ [ '3/5/2016 23:57:40',
     '2 days before Nakshatra Birthday',
     'Sudharshun@gmail.com',
     '8475942450',
+    '12/19/2016',
     'Mail Sent' ],
   [ '3/6/2016 0:23:35',
     'Vadiehi',
     'Maargazhi',
-    'Aayilyam',
-    '2 days before Nakshatra Birthday',
+    'Magam',
+    '1 days before Nakshatra Birthday',
     'vaidehi0605@gmail.com',
-    '8475942450' ],
+    '8475942450',
+    '12/19/2016' ],
   [ '3/6/2016 0:42:49',
     'Ravichander',
     'Maasi',
-    'Aayilyam',
-    '1 day before Nakshatra Birthday',
+    'Magam',
+    'On Nakshatra Birthday',
     'sudharshun@gmail.com',
     '8475942450' ],
   [ '3/6/2016 0:53:37',
@@ -79,7 +81,7 @@ describe('Given a Veda Utils Class', () => {
         it('Then should be able to read from Calendar File',()=>{
             let vedamUtils = new VedamUtils()
             let calendarData = vedamUtils.readCalendarData()
-            expect(calendarData[0].EngDate).to.be.eql('1/1/2017')  
+            expect(calendarData[0].EngDate).to.be.eql('12/1/2016')  
         })
 
         it('Then should find out Tamil Nakshatram for a given English Date',()=>{
@@ -94,30 +96,69 @@ describe('Given a Veda Utils Class', () => {
         it('Then should find out Tamil Nakshatram for a todays Date',()=>{
             let vedamUtils = new VedamUtils()
                  let tamilToday=vedamUtils.getTamilToday()
-                 vedamUtils.sendEmail('Sudharshun','Sudharshun@gmail.com','Avittam','Aavani')
-            expect(tamilToday.TamilDay).to.be.eql(3)
+         //        vedamUtils.sendEmail('Sudharshun','Sudharshun@gmail.com','Avittam','Aavani')
+            expect(tamilToday.TamilDay).to.be.eql(4)
             expect(tamilToday.Month).to.be.eql('Maargazhi')
-            expect(tamilToday.Star).to.be.eql('Aayilyam')
+            expect(tamilToday.Star).to.be.eql('Magam')
             })
 
-        it('Then should find out Tamil Nakshatram for a todays Date',()=>{
-            let vedamUtils = new VedamUtils()
-            let tamilToday=vedamUtils.getTamilToday()
-            console.log('')            
-            expect(tamilToday.TamilDay).to.be.eql(3)
-            expect(tamilToday.Month).to.be.eql('Maargazhi')
-            expect(tamilToday.Star).to.be.eql('Aayilyam')
-            })
-
-        it('Then should find out who is having janmanakshatram today',()=>{
+         it('Then should find out who is having janmanakshatram today',()=>{
             let vedamUtils = new VedamUtils()
             let bdayToday=vedamUtils.getBirthdayReminders(testData)
             console.log('Got bdays')     
             console.log('Birthday star today',bdayToday)       
             expect(bdayToday.length).to.be.eql(2)
+          })
+
+           it('Then should find out who not having registration date set',()=>{
+            let vedamUtils = new VedamUtils()
+            let unRegistered=vedamUtils.getReminderNotSet(testData)
+            console.log('Got reminder Date not set')     
+            console.log('Unregistered in list',unRegistered)       
+            expect(unRegistered.length).to.be.eql(7)
+          })
+
+          it('Then should find out Translated Date for list of unregisted users',()=>{
+            let vedamUtils = new VedamUtils()
+            let unRegistered=vedamUtils.getReminderNotSet(testData)
+            let reminderDateSet=vedamUtils.calculateReminders(unRegistered)
+            console.log('Got reminder Date set')     
+            console.log('Unregistered in list',reminderDateSet)       
+            expect(reminderDateSet[0][1]).to.be.eql('Ravichander')
+          })
+
+         it('Then should be able to give me english date for nakshakram and maasam',()=>{
+            let vedamUtils = new VedamUtils()
+            let reminderDate = vedamUtils.getReminderForPerson('Maargazhi','Hastam',3)
+            expect(reminderDate).to.be.eql('12/19/2016')  
+         })
+
+
+         it('Then should be able to translate days before to number',()=>{
+            let vedamUtils = new VedamUtils()
+            expect( vedamUtils.getNoOfDays(testData[0][4])).to.be.eql(2)
+            expect( vedamUtils.getNoOfDays(testData[1][4])).to.be.eql(1)
+            expect( vedamUtils.getNoOfDays(testData[2][4])).to.be.eql(0)
         
          })
 
+
+          it('Then should find list of reminders that match today',()=>{
+            let vedamUtils = new VedamUtils()
+            let listOfPersons=testData
+            listOfPersons[0][7]='12/19/2016'
+            
+            listOfPersons[2][7]='12/19/2016'
+            
+            listOfPersons[3][7]='12/19/2016'
+            listOfPersons[3][8]='Mail Sent'
+
+            let remindersTobeSent=vedamUtils.getPersonsWithReminderToday(listOfPersons)
+
+            console.log('Got reminder Date not set')     
+            console.log('Todays Match in list',remindersTobeSent)       
+            expect(remindersTobeSent.length).to.be.eql(2)
+          })
 
     })
 

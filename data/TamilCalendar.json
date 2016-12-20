@@ -1,80 +1,266 @@
 [
  {
+   "EngDate": "12/1/2016",
+   "TamilDay": 16,
+   "Month": "Karthigai",
+   "Star": "Moolam"
+ },
+ {
+   "EngDate": "12/2/2016",
+   "TamilDay": 17,
+   "Month": "Karthigai",
+   "Star": "pooradam"
+ },
+ {
+   "EngDate": "12/3/2016",
+   "TamilDay": 18,
+   "Month": "Karthigai",
+   "Star": "pooradam"
+ },
+ {
+   "EngDate": "12/4/2016",
+   "TamilDay": 19,
+   "Month": "Karthigai",
+   "Star": "uthiradam"
+ },
+ {
+   "EngDate": "12/5/2016",
+   "TamilDay": 20,
+   "Month": "Karthigai",
+   "Star": "thiruvonam"
+ },
+ {
+   "EngDate": "12/6/2016",
+   "TamilDay": 21,
+   "Month": "Karthigai",
+   "Star": ""
+ },
+ {
+   "EngDate": "12/7/2016",
+   "TamilDay": 22,
+   "Month": "Karthigai",
+   "Star": "Sathayam"
+ },
+ {
+   "EngDate": "12/8/2016",
+   "TamilDay": 23,
+   "Month": "Karthigai",
+   "Star": "poorathadi/uthirathadi"
+ },
+ {
+   "EngDate": "12/9/2016",
+   "TamilDay": 24,
+   "Month": "Karthigai",
+   "Star": "Revathi"
+ },
+ {
+   "EngDate": "12/10/2016",
+   "TamilDay": 25,
+   "Month": "Karthigai",
+   "Star": "Aswini"
+ },
+ {
+   "EngDate": "12/11/2016",
+   "TamilDay": 26,
+   "Month": "Karthigai",
+   "Star": "Bharani"
+ },
+ {
+   "EngDate": "12/12/2016",
+   "TamilDay": 27,
+   "Month": "Karthigai",
+   "Star": "kirthigai"
+ },
+ {
+   "EngDate": "12/13/2016",
+   "TamilDay": 28,
+   "Month": "Karthigai",
+   "Star": "rohini"
+ },
+ {
+   "EngDate": "12/14/2016",
+   "TamilDay": 29,
+   "Month": "Karthigai",
+   "Star": "Mirugasirisham"
+ },
+ {
+   "EngDate": "12/15/2016",
+   "TamilDay": 30,
+   "Month": "Karthigai",
+   "Star": "thiruvadhirai"
+ },
+ {
+   "EngDate": "12/16/2016",
+   "TamilDay": 1,
+   "Month": "Maargazhi",
+   "Star": "Punarpoosam"
+ },
+ {
+   "EngDate": "12/17/2016",
+   "TamilDay": 2,
+   "Month": "Maargazhi",
+   "Star": "poosam"
+ },
+ {
+   "EngDate": "12/18/2016",
+   "TamilDay": 3,
+   "Month": "Maargazhi",
+   "Star": "Aayilyam"
+ },
+ {
+   "EngDate": "12/19/2016",
+   "TamilDay": 4,
+   "Month": "Maargazhi",
+   "Star": "Magam"
+ },
+ {
+   "EngDate": "12/20/2016",
+   "TamilDay": 5,
+   "Month": "Maargazhi",
+   "Star": "pooram"
+ },
+ {
+   "EngDate": "12/21/2016",
+   "TamilDay": 6,
+   "Month": "Maargazhi",
+   "Star": "uthiram"
+ },
+ {
+   "EngDate": "12/22/2016",
+   "TamilDay": 7,
+   "Month": "Maargazhi",
+   "Star": "Hastam"
+ },
+ {
+   "EngDate": "12/23/2016",
+   "TamilDay": 8,
+   "Month": "Maargazhi",
+   "Star": "Chithirai"
+ },
+ {
+   "EngDate": "12/24/2016",
+   "TamilDay": 9,
+   "Month": "Maargazhi",
+   "Star": "Swathi"
+ },
+ {
+   "EngDate": "12/25/2016",
+   "TamilDay": 10,
+   "Month": "Maargazhi",
+   "Star": "Visagam"
+ },
+ {
+   "EngDate": "12/26/2016",
+   "TamilDay": 11,
+   "Month": "Maargazhi",
+   "Star": "Anusham"
+ },
+ {
+   "EngDate": "12/27/2016",
+   "TamilDay": 12,
+   "Month": "Maargazhi",
+   "Star": "Anusham"
+ },
+ {
+   "EngDate": "12/28/2016",
+   "TamilDay": 13,
+   "Month": "Maargazhi",
+   "Star": "Kettai"
+ },
+ {
+   "EngDate": "12/29/2016",
+   "TamilDay": 14,
+   "Month": "Maargazhi",
+   "Star": "Moolam"
+ },
+ {
+   "EngDate": "12/30/2016",
+   "TamilDay": 15,
+   "Month": "Maargazhi",
+   "Star": "pooradam"
+ },
+ {
+   "EngDate": "12/31/2016",
+   "TamilDay": 16,
+   "Month": "Maargazhi",
+   "Star": "uthiradam"
+ },
+ {
    "EngDate": "1/1/2017",
    "TamilDay": 17,
-   "Month": "Margazhi",
+   "Month": "Maargazhi",
    "Star": "Thiruvonam"
  },
  {
    "EngDate": "1/2/2017",
    "TamilDay": 18,
-   "Month": "Margazhi",
+   "Month": "Maargazhi",
    "Star": "Avittam"
  },
  {
    "EngDate": "1/3/2017",
    "TamilDay": 19,
-   "Month": "Margazhi",
-   "Star": "Sadayam"
+   "Month": "Maargazhi",
+   "Star": "Sathayam"
  },
  {
    "EngDate": "1/4/2017",
    "TamilDay": 20,
-   "Month": "Margazhi",
+   "Month": "Maargazhi",
    "Star": "Puratadhi"
  },
  {
    "EngDate": "1/5/2017",
    "TamilDay": 21,
-   "Month": "Margazhi",
+   "Month": "Maargazhi",
    "Star": "Uthirathadhi"
  },
  {
    "EngDate": "1/6/2017",
    "TamilDay": 22,
-   "Month": "Margazhi",
+   "Month": "Maargazhi",
    "Star": "Revathi"
  },
  {
    "EngDate": "1/7/2017",
    "TamilDay": 23,
-   "Month": "Margazhi",
+   "Month": "Maargazhi",
    "Star": "Aswini"
  },
  {
    "EngDate": "1/8/2017",
    "TamilDay": 24,
-   "Month": "Margazhi",
+   "Month": "Maargazhi",
    "Star": "Bharani"
  },
  {
    "EngDate": "1/9/2017",
    "TamilDay": 25,
-   "Month": "Margazhi",
+   "Month": "Maargazhi",
    "Star": "Karthigai"
  },
  {
    "EngDate": "1/10/2017",
    "TamilDay": 26,
-   "Month": "Margazhi",
+   "Month": "Maargazhi",
    "Star": "Rohini"
  },
  {
    "EngDate": "1/11/2017",
    "TamilDay": 27,
-   "Month": "Margazhi",
+   "Month": "Maargazhi",
    "Star": "Thiruvadhirai"
  },
  {
    "EngDate": "1/12/2017",
    "TamilDay": 28,
-   "Month": "Margazhi",
+   "Month": "Maargazhi",
    "Star": "punarpoosam"
  },
  {
    "EngDate": "1/13/2017",
    "TamilDay": 29,
-   "Month": "Margazhi",
+   "Month": "Maargazhi",
    "Star": "poosam"
  },
  {
@@ -111,7 +297,7 @@
    "EngDate": "1/19/2017",
    "TamilDay": 6,
    "Month": "Thai",
-   "Star": "Chittirai"
+   "Star": "Chithirai"
  },
  {
    "EngDate": "1/20/2017",
@@ -177,7 +363,7 @@
    "EngDate": "1/30/2017",
    "TamilDay": 17,
    "Month": "Thai",
-   "Star": "Sadayam"
+   "Star": "Sathayam"
  },
  {
    "EngDate": "1/31/2017",
@@ -243,7 +429,7 @@
    "EngDate": "2/10/2017",
    "TamilDay": 27,
    "Month": "Thai",
-   "Star": "Sadayam"
+   "Star": "Sathayam"
  },
  {
    "EngDate": "2/11/2017",
@@ -260,181 +446,181 @@
  {
    "EngDate": "2/13/2017",
    "TamilDay": 1,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Revathi"
  },
  {
    "EngDate": "2/14/2017",
    "TamilDay": 2,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Barani"
  },
  {
    "EngDate": "2/15/2017",
    "TamilDay": 3,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Kathikai"
  },
  {
    "EngDate": "2/16/2017",
    "TamilDay": 4,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Rohini"
  },
  {
    "EngDate": "2/17/2017",
    "TamilDay": 5,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Mirugasirisham"
  },
  {
    "EngDate": "2/18/2017",
    "TamilDay": 6,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Thiruvadhirai"
  },
  {
    "EngDate": "2/19/2017",
    "TamilDay": 7,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Punarpoosam"
  },
  {
    "EngDate": "2/20/2017",
    "TamilDay": 8,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Poosam"
  },
  {
    "EngDate": "2/21/2017",
    "TamilDay": 9,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Aayilyam"
  },
  {
    "EngDate": "2/22/2017",
    "TamilDay": 10,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Magam"
  },
  {
    "EngDate": "2/23/2017",
    "TamilDay": 11,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Magam"
  },
  {
    "EngDate": "2/24/2017",
    "TamilDay": 12,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Pooram"
  },
  {
    "EngDate": "2/25/2017",
    "TamilDay": 13,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Uthiram"
  },
  {
    "EngDate": "2/26/2017",
    "TamilDay": 14,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Hastam"
  },
  {
    "EngDate": "2/27/2017",
    "TamilDay": 15,
-   "Month": "Masi",
-   "Star": "Chittirai"
+   "Month": "Maasi",
+   "Star": "Chithirai"
  },
  {
    "EngDate": "2/28/2017",
    "TamilDay": 16,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Swathi"
  },
  {
    "EngDate": "2/29/2017",
    "TamilDay": 17,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Visagam"
  },
  {
    "EngDate": "3/1/2017",
    "TamilDay": 28,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Anuraadha"
  },
  {
    "EngDate": "3/2/2017",
    "TamilDay": 29,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Kettai"
  },
  {
    "EngDate": "3/3/2017",
    "TamilDay": 20,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "moolam"
  },
  {
    "EngDate": "3/4/2017",
    "TamilDay": 21,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Pooradam"
  },
  {
    "EngDate": "3/5/2017",
    "TamilDay": 22,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Uthradam"
  },
  {
    "EngDate": "3/6/2017",
    "TamilDay": 23,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "thiruvonam"
  },
  {
    "EngDate": "3/7/2017",
    "TamilDay": 24,
-   "Month": "Masi",
-   "Star": "Avittam"
+   "Month": "Maasi",
+   "Star": ""
  },
  {
    "EngDate": "3/8/2017",
    "TamilDay": 25,
-   "Month": "Masi",
-   "Star": "Sadayam"
+   "Month": "Maasi",
+   "Star": "Sathayam"
  },
  {
    "EngDate": "3/9/2017",
    "TamilDay": 26,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Poorathadi"
  },
  {
    "EngDate": "3/10/2017",
    "TamilDay": 27,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Uthrattadi"
  },
  {
    "EngDate": "3/11/2017",
    "TamilDay": 28,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Revathi"
  },
  {
    "EngDate": "3/12/2017",
    "TamilDay": 29,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Aswini"
  },
  {
    "EngDate": "3/13/2017",
    "TamilDay": 30,
-   "Month": "Masi",
+   "Month": "Maasi",
    "Star": "Bharani"
  },
  {
@@ -507,7 +693,7 @@
    "EngDate": "3/25/2017",
    "TamilDay": 12,
    "Month": "Panguni",
-   "Star": "Chittirai"
+   "Star": "Chithirai"
  },
  {
    "EngDate": "3/26/2017",
@@ -567,13 +753,13 @@
    "EngDate": "4/4/2017",
    "TamilDay": 22,
    "Month": "Panguni",
-   "Star": "Avittam"
+   "Star": ""
  },
  {
    "EngDate": "4/5/2017",
    "TamilDay": 23,
    "Month": "Panguni",
-   "Star": "Sadayam"
+   "Star": "Sathayam"
  },
  {
    "EngDate": "4/6/2017",
@@ -626,181 +812,181 @@
  {
    "EngDate": "4/14/2017",
    "TamilDay": 1,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Punarpoosam"
  },
  {
    "EngDate": "4/15/2017",
    "TamilDay": 2,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Poosam"
  },
  {
    "EngDate": "4/16/2017",
    "TamilDay": 3,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Aayilyam"
  },
  {
    "EngDate": "4/17/2017",
    "TamilDay": 4,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Magam"
  },
  {
    "EngDate": "4/18/2017",
    "TamilDay": 5,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "pooram"
  },
  {
    "EngDate": "4/19/2017",
    "TamilDay": 6,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "uthiram"
  },
  {
    "EngDate": "4/20/2017",
    "TamilDay": 7,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Hastam"
  },
  {
    "EngDate": "4/21/2017",
    "TamilDay": 8,
-   "Month": "Chittirai",
-   "Star": "Chittirai"
+   "Month": "Chithirai",
+   "Star": "Chithirai"
  },
  {
    "EngDate": "4/22/2017",
    "TamilDay": 9,
-   "Month": "Chittirai",
-   "Star": "Chittirai"
+   "Month": "Chithirai",
+   "Star": "Chithirai"
  },
  {
    "EngDate": "4/23/2017",
    "TamilDay": 10,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Swathi"
  },
  {
    "EngDate": "4/24/2017",
    "TamilDay": 11,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Visagam"
  },
  {
    "EngDate": "4/25/2017",
    "TamilDay": 12,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Anusham"
  },
  {
    "EngDate": "4/26/2017",
    "TamilDay": 13,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Kettai"
  },
  {
    "EngDate": "4/27/2017",
    "TamilDay": 14,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Moolam"
  },
  {
    "EngDate": "4/28/2017",
    "TamilDay": 15,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "pooradam"
  },
  {
    "EngDate": "4/29/2017",
    "TamilDay": 16,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "uthiradam"
  },
  {
    "EngDate": "4/30/2017",
    "TamilDay": 17,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "thiruvonam"
  },
  {
    "EngDate": "5/1/2017",
    "TamilDay": 18,
-   "Month": "Chittirai",
-   "Star": "Avittam"
+   "Month": "Chithirai",
+   "Star": ""
  },
  {
    "EngDate": "5/2/2017",
    "TamilDay": 19,
-   "Month": "Chittirai",
-   "Star": "Sadayam"
+   "Month": "Chithirai",
+   "Star": "Sathayam"
  },
  {
    "EngDate": "5/3/2017",
    "TamilDay": 20,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "porathadi"
  },
  {
    "EngDate": "5/4/2017",
    "TamilDay": 21,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "uthirathadi"
  },
  {
    "EngDate": "5/5/2017",
    "TamilDay": 22,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Revathi"
  },
  {
    "EngDate": "5/6/2017",
    "TamilDay": 23,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Aswini"
  },
  {
    "EngDate": "5/7/2017",
    "TamilDay": 24,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Bharani"
  },
  {
    "EngDate": "5/8/2017",
    "TamilDay": 25,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Karthigai/rohini"
  },
  {
    "EngDate": "5/9/2017",
    "TamilDay": 26,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Mirugasirisham"
  },
  {
    "EngDate": "5/10/2017",
    "TamilDay": 27,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "thiruvadhirai"
  },
  {
    "EngDate": "5/11/2017",
    "TamilDay": 28,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "punarpoosam"
  },
  {
    "EngDate": "5/12/2017",
    "TamilDay": 29,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Poosam"
  },
  {
    "EngDate": "5/13/2017",
    "TamilDay": 30,
-   "Month": "Chittirai",
+   "Month": "Chithirai",
    "Star": "Aayilyam"
  },
  {
@@ -837,7 +1023,7 @@
    "EngDate": "5/19/2017",
    "TamilDay": 6,
    "Month": "Vaigasi",
-   "Star": "Chittirai"
+   "Star": "Chithirai"
  },
  {
    "EngDate": "5/20/2017",
@@ -891,13 +1077,13 @@
    "EngDate": "5/28/2017",
    "TamilDay": 15,
    "Month": "Vaigasi",
-   "Star": "Avittam"
+   "Star": ""
  },
  {
    "EngDate": "5/29/2017",
    "TamilDay": 16,
    "Month": "Vaigasi",
-   "Star": "Sadayam"
+   "Star": "Sathayam"
  },
  {
    "EngDate": "5/30/2017",
@@ -999,7 +1185,7 @@
    "EngDate": "6/15/2017",
    "TamilDay": 1,
    "Month": "Aani",
-   "Star": "Chittirai"
+   "Star": "Chithirai"
  },
  {
    "EngDate": "6/16/2017",
@@ -1059,13 +1245,13 @@
    "EngDate": "6/25/2017",
    "TamilDay": 11,
    "Month": "Aani",
-   "Star": "Avittam"
+   "Star": ""
  },
  {
    "EngDate": "6/26/2017",
    "TamilDay": 12,
    "Month": "Aani",
-   "Star": "Sadayam"
+   "Star": "Sathayam"
  },
  {
    "EngDate": "6/27/2017",
@@ -1161,7 +1347,7 @@
    "EngDate": "7/12/2017",
    "TamilDay": 28,
    "Month": "Aani",
-   "Star": "Chittirai"
+   "Star": "Chithirai"
  },
  {
    "EngDate": "7/13/2017",
@@ -1221,13 +1407,13 @@
    "EngDate": "7/22/2017",
    "TamilDay": 7,
    "Month": "Aadi",
-   "Star": "Avittam"
+   "Star": ""
  },
  {
    "EngDate": "7/23/2017",
    "TamilDay": 8,
    "Month": "Aadi",
-   "Star": "Sadayam"
+   "Star": "Sathayam"
  },
  {
    "EngDate": "7/24/2017",
@@ -1329,7 +1515,7 @@
    "EngDate": "8/9/2017",
    "TamilDay": 25,
    "Month": "Aadi",
-   "Star": "Chittirai"
+   "Star": "Chithirai"
  },
  {
    "EngDate": "8/10/2017",
@@ -1491,7 +1677,7 @@
    "EngDate": "9/5/2017",
    "TamilDay": 20,
    "Month": "Aavani",
-   "Star": "Chittirai"
+   "Star": "Chithirai"
  },
  {
    "EngDate": "9/6/2017",
@@ -1557,7 +1743,7 @@
    "EngDate": "9/16/2017",
    "TamilDay": 31,
    "Month": "Aavani",
-   "Star": "Sadayam"
+   "Star": "Sathayam"
  },
  {
    "EngDate": "9/17/2017",
@@ -1653,7 +1839,7 @@
    "EngDate": "10/2/2017",
    "TamilDay": 16,
    "Month": "Purattasi",
-   "Star": "Chittirai"
+   "Star": "Chithirai"
  },
  {
    "EngDate": "10/3/2017",
@@ -1821,7 +2007,7 @@
    "EngDate": "10/30/2017",
    "TamilDay": 14,
    "Month": "Aippasi",
-   "Star": "Chittirai"
+   "Star": "Chithirai"
  },
  {
    "EngDate": "10/31/2017",
@@ -1922,181 +2108,181 @@
  {
    "EngDate": "11/16/2017",
    "TamilDay": 1,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "rohini"
  },
  {
    "EngDate": "11/17/2017",
    "TamilDay": 2,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Mirugasirisham"
  },
  {
    "EngDate": "11/18/2017",
    "TamilDay": 3,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "thiruvadhirai"
  },
  {
    "EngDate": "11/19/2017",
    "TamilDay": 4,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Punarpoosam"
  },
  {
    "EngDate": "11/20/2017",
    "TamilDay": 5,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "poosam"
  },
  {
    "EngDate": "11/21/2017",
    "TamilDay": 6,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Aayilyam"
  },
  {
    "EngDate": "11/22/2017",
    "TamilDay": 7,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Magam"
  },
  {
    "EngDate": "11/23/2017",
    "TamilDay": 8,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "pooram"
  },
  {
    "EngDate": "11/24/2017",
    "TamilDay": 9,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "uthiram"
  },
  {
    "EngDate": "11/25/2017",
    "TamilDay": 10,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Hastam"
  },
  {
    "EngDate": "11/26/2017",
    "TamilDay": 11,
-   "Month": "Karthikai",
-   "Star": "Chittirai"
+   "Month": "Karthigai",
+   "Star": "Chithirai"
  },
  {
    "EngDate": "11/27/2017",
    "TamilDay": 12,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Swathi"
  },
  {
    "EngDate": "11/28/2017",
    "TamilDay": 13,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Visagam"
  },
  {
    "EngDate": "11/29/2017",
    "TamilDay": 14,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Anusham"
  },
  {
    "EngDate": "11/30/2017",
    "TamilDay": 15,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Kettai"
  },
  {
    "EngDate": "12/1/2017",
    "TamilDay": 16,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Moolam"
  },
  {
    "EngDate": "12/2/2017",
    "TamilDay": 17,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "pooradam"
  },
  {
    "EngDate": "12/3/2017",
    "TamilDay": 18,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "pooradam"
  },
  {
    "EngDate": "12/4/2017",
    "TamilDay": 19,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "uthiradam"
  },
  {
    "EngDate": "12/5/2017",
    "TamilDay": 20,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "thiruvonam"
  },
  {
    "EngDate": "12/6/2017",
    "TamilDay": 21,
-   "Month": "Karthikai",
-   "Star": "avittam"
+   "Month": "Karthigai",
+   "Star": ""
  },
  {
    "EngDate": "12/7/2017",
    "TamilDay": 22,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Sathayam"
  },
  {
    "EngDate": "12/8/2017",
    "TamilDay": 23,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "poorathadi/uthirathadi"
  },
  {
    "EngDate": "12/9/2017",
    "TamilDay": 24,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Revathi"
  },
  {
    "EngDate": "12/10/2017",
    "TamilDay": 25,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Aswini"
  },
  {
    "EngDate": "12/11/2017",
    "TamilDay": 26,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Bharani"
  },
  {
    "EngDate": "12/12/2017",
    "TamilDay": 27,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "kirthigai"
  },
  {
    "EngDate": "12/13/2017",
    "TamilDay": 28,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "rohini"
  },
  {
    "EngDate": "12/14/2017",
    "TamilDay": 29,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "Mirugasirisham"
  },
  {
    "EngDate": "12/15/2017",
    "TamilDay": 30,
-   "Month": "Karthikai",
+   "Month": "Karthigai",
    "Star": "thiruvadhirai"
  },
  {
@@ -2145,7 +2331,7 @@
    "EngDate": "12/23/2017",
    "TamilDay": 8,
    "Month": "Maargazhi",
-   "Star": "Chittirai"
+   "Star": "Chithirai"
  },
  {
    "EngDate": "12/24/2017",
