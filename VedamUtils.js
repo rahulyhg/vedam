@@ -65,8 +65,13 @@ class VedamUtils {
         let tamilStar = today.Star
         console.log('Matching -->', tamilStar)
 
+        listOfPeople.forEach(function (person, index) {
+            //    console.log("--->" + index);
+            person[10] = index
+        });
+
         birthdayReminders = listOfPeople.filter(function (elem) {
-            return (elem[3] === tamilStar);
+            return (elem[3] === tamilStar && elem[9] === undefined );
         });
 
         return birthdayReminders

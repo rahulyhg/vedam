@@ -58,14 +58,15 @@ var testData= [ [ '3/5/2016 23:57:40',
   [ '12/17/2016 14:40:27',
     'Asha',
     'Chithirai',
-    'Sathayam',
+    'Pooram',
     '1 day before Nakshatra Birthday',
     'Sudharshun@gmail.com',
-    '8475942450' ],
+    '8475942450',,
+    ,'Mail Sent' ],
   [ '12/18/2016 20:53:37',
     'Sudharshun',
     'Aani',
-    'Aswini',
+    'Pooram',
     '1 day before Nakshatra Birthday',
     'Sudharshun@gmail.com',
     '8475942450' ] ]
@@ -97,7 +98,7 @@ describe('Given a Veda Utils Class', () => {
             let vedamUtils = new VedamUtils()
                  let tamilToday=vedamUtils.getTamilToday()
          //        vedamUtils.sendEmail('Sudharshun','Sudharshun@gmail.com','Avittam','Aavani')
-            expect(tamilToday.TamilDay).to.be.eql(4)
+            expect(tamilToday.TamilDay).to.be.eql(5)
             expect(tamilToday.Month).to.be.eql('Maargazhi')
             expect(tamilToday.Star).to.be.eql('Magam')
             })
@@ -106,7 +107,7 @@ describe('Given a Veda Utils Class', () => {
             let vedamUtils = new VedamUtils()
             let bdayToday=vedamUtils.getBirthdayReminders(testData)
             console.log('Got bdays')     
-            console.log('Birthday star today',bdayToday)       
+            console.log('Birthday star today>>>>>',bdayToday)       
             expect(bdayToday.length).to.be.eql(2)
           })
 

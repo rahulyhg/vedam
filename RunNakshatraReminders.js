@@ -152,14 +152,14 @@ function listRegistrations(auth) {
 function checkTamilMonth(auth,listOfPeople){
   var vedamUtils=new VedamUtils()
   var calendarData = vedamUtils.readCalendarData()
-  var unRegistered=vedamUtils.getReminderNotSet(listOfPeople)
-  console.log("UnRegistered Users",unRegistered)
-  var reminderDateSet=vedamUtils.calculateReminders(unRegistered)
-  console.log("Calculated Reminders for Users",reminderDateSet)
-  if(reminderDateSet!==undefined && reminderDateSet.length>0){
-    updateSheet(auth,reminderDateSet)
-  }
- // 
+  var nakshatramToday=vedamUtils.getBirthdayReminders(listOfPeople)
+  console.log("Nakshatram Today Users",nakshatramToday)
+  //  var reminderDateSet=vedamUtils.calculateReminders(unRegistered)
+  // console.log("Calculated Reminders for Users",reminderDateSet)
+  // if(reminderDateSet!==undefined && reminderDateSet.length>0){
+  //   updateSheet(auth,reminderDateSet)
+  // }
+  // 
 }
 
 
