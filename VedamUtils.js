@@ -9,8 +9,8 @@ var smtpTransport = nodemailer.createTransport(smtpTransport({
     secureConnection: false,
     port: 587,
     auth: {
-        user: "username",
-        pass: "password"
+        user: "",
+        pass: ""
     }
 }));
 
@@ -71,7 +71,7 @@ class VedamUtils {
         });
 
         birthdayReminders = listOfPeople.filter(function (elem) {
-            return (elem[3] === tamilStar && elem[9] === undefined );
+            return (elem[3].toUpperCase() === tamilStar.toUpperCase() && elem[9] === undefined );
         });
 
         return birthdayReminders
@@ -163,6 +163,35 @@ class VedamUtils {
             from: '"KKSF Midwest Vedasamrakshanam" <kksfvedasamrakshanam@gmail.com>', // sender address
             to: emailId, // list of receivers
             subject: 'Vedasamrakshanam Registration Acknowledgement:' + name, // Subject line
+            html: htmlBody
+            // html body
+        };
+
+        // send mail with defined transport object
+        smtpTransport.sendMail(mailOptions, function (error, info) {
+            if (error) {
+                return console.log(error);
+            }
+            console.log('Message sent: ' + info.response);
+        });
+    }
+
+
+      sendEmailForNakshtram(name, emailId, nakshatram, month) {
+        console.log('Sending email to ' + emailId)
+
+        var htmlBody = 'Greetings '+name+' !!<br/><br/>' +
+            'Thank you for supporting our VRNT Veda samrakshanam scheme <br/>'
+            + '<b>We would like to wish you on your Janmanakshatram:' + nakshatram + '</b><br/>'
+            + '<br/>Below is a summary of your information registered:<br/>'
+            + '<br/><br/><br/><b>Kanchi Shankara Kamakoti Shankara</b> !!'
+            + '<br/><br/>Best regards,'
+            + '<br/>KKSF Midwest Chapter'
+        // setup e-mail data with unicode symbols
+        var mailOptions = {
+            from: '"KKSF Midwest Vedasamrakshanam" <kksfvedasamrakshanam@gmail.com>', // sender address
+            to: emailId, // list of receivers
+            subject: 'Vedasamrakshanam Reminder' + name, // Subject line
             html: htmlBody
             // html body
         };

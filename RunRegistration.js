@@ -2,17 +2,6 @@ var fs = require('fs');
 var readline = require('readline');
 var google = require('googleapis');
 var googleAuth = require('google-auth-library');
-var nodemailer = require('nodemailer');
-var smtpTransport = require("nodemailer-smtp-transport");
-var smtpTransport = nodemailer.createTransport(smtpTransport({
-    host : "smtp.gmail.com",
-    secureConnection : false,
-    port: 587,
-    auth : {
-        user : "username",
-        pass : "password"
-    }
-}));
 var path = require('path')
 // If modifying these scopes, delete your previously saved credentials
 // at ~/.credentials/sheets.googleapis.com-nodejs-quickstart.json

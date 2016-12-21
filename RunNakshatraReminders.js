@@ -2,17 +2,6 @@ var fs = require('fs');
 var readline = require('readline');
 var google = require('googleapis');
 var googleAuth = require('google-auth-library');
-var nodemailer = require('nodemailer');
-var smtpTransport = require("nodemailer-smtp-transport");
-var smtpTransport = nodemailer.createTransport(smtpTransport({
-    host : "smtp.gmail.com",
-    secureConnection : false,
-    port: 587,
-    auth : {
-        user : "username",
-        pass : "password"
-    }
-}));
 var path = require('path')
 // If modifying these scopes, delete your previously saved credentials
 // at ~/.credentials/sheets.googleapis.com-nodejs-quickstart.json
@@ -154,38 +143,36 @@ function checkTamilMonth(auth,listOfPeople){
   var calendarData = vedamUtils.readCalendarData()
   var nakshatramToday=vedamUtils.getBirthdayReminders(listOfPeople)
   console.log("Nakshatram Today Users",nakshatramToday)
-  //  var reminderDateSet=vedamUtils.calculateReminders(unRegistered)
-  // console.log("Calculated Reminders for Users",reminderDateSet)
-  // if(reminderDateSet!==undefined && reminderDateSet.length>0){
-  //   updateSheet(auth,reminderDateSet)
-  // }
-  // 
+
+   if(nakshatramToday!==undefined && nakshatramToday.length>0){
+     updateSheetForNakshatram(auth,nakshatramToday)
+   } 
 }
 
 
-function updateSheet(auth,reminderDateSet){
-  console.log('IN update Sheets')
+function updateSheetForNakshatram(auth,nakshatramToday){
+  console.log('IN update Sheets For Nakshatram')
   var spreadsheetId = '17VagNnpcMoWULGfF08AMFpEKB5uwo7b2-jP7b5KzhIA';
-  var collToUpdate=7
+  var collToUpdate=9
   var rowToUpdate=1
   var requests = [];
   var vedamUtils=new VedamUtils()
- for (i = 0; i < reminderDateSet.length; i++) {
+ for (i = 0; i < nakshatramToday.length; i++) {
   requests.push({
   updateCells: {
-  start: {sheetId: 962028053, rowIndex: reminderDateSet[i][10]+1, columnIndex: collToUpdate},
+  start: {sheetId: 962028053, rowIndex: nakshatramToday[i][10]+1, columnIndex: collToUpdate},
     rows: [{
       values: [{
-        userEnteredValue: {stringValue: reminderDateSet[i][7]}
+        userEnteredValue: {stringValue: 'Mail Sent'}
       }]
     }],
     fields: 'userEnteredValue'
   }
 });
-  vedamUtils.sendEmail(reminderDateSet[i][1],reminderDateSet[i][5],reminderDateSet[i][3],reminderDateSet[i][2])
+  vedamUtils.sendEmailForNakshtram(nakshatramToday[i][1],nakshatramToday[i][5],nakshatramToday[i][3],nakshatramToday[i][2])
 }
  
-console.log('Created Request for update')
+console.log('Created Request for update mail sent nakshatram')
 var batchUpdateRequest = {requests: requests}
 var sheets = google.sheets('v4');
 
@@ -198,6 +185,6 @@ sheets.spreadsheets.batchUpdate({
     // Handle error
     console.log("Error while Updating Sheets for Reminder Date",err);
   }
-  console.log('Sheets Updated Successfully')
+  console.log('Sheets Updated Successfully for Nakshatram')
 });
 }

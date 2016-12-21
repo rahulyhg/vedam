@@ -2,17 +2,7 @@ var fs = require('fs');
 var readline = require('readline');
 var google = require('googleapis');
 var googleAuth = require('google-auth-library');
-var nodemailer = require('nodemailer');
-var smtpTransport = require("nodemailer-smtp-transport");
-var smtpTransport = nodemailer.createTransport(smtpTransport({
-    host : "smtp.gmail.com",
-    secureConnection : false,
-    port: 587,
-    auth : {
-        user : "username",
-        pass : "password"
-    }
-}));
+
 var path = require('path')
 // If modifying these scopes, delete your previously saved credentials
 // at ~/.credentials/sheets.googleapis.com-nodejs-quickstart.json
@@ -208,26 +198,3 @@ sheets.spreadsheets.batchUpdate({
 
 }
 
-function sendEmail(mailId){
-
-console.log('Sending email to '+mailId)
-
-
-// setup e-mail data with unicode symbols
-var mailOptions = {
-    from: '"KKSF Midwest Vedasamrakshanam?" <kksfvedasamrakshanam@gmail.com>', // sender address
-    to: 'sudharshun@gmail.com', // list of receivers
-    subject: 'Vedasamrakshanam Test', // Subject line
-    text: 'Om Sai Ram', // plaintext body
-    html: '<b> Om Sai Ram </b>' // html body
-};
-
-// send mail with defined transport object
-smtpTransport.sendMail(mailOptions, function(error, info){
-    if(error){
-        return console.log(error);
-    }
-    console.log('Message sent: ' + info.response);
-});
-
-}
