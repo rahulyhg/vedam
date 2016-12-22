@@ -2,7 +2,6 @@ var fs = require('fs');
 var readline = require('readline');
 var google = require('googleapis');
 var googleAuth = require('google-auth-library');
-
 var path = require('path')
 // If modifying these scopes, delete your previously saved credentials
 // at ~/.credentials/sheets.googleapis.com-nodejs-quickstart.json
@@ -111,7 +110,7 @@ function listRegistrations(auth) {
   sheets.spreadsheets.values.get({
     auth: auth,
     spreadsheetId: '17VagNnpcMoWULGfF08AMFpEKB5uwo7b2-jP7b5KzhIA',
-    range: 'Form Responses 1!A2:I',
+    range: 'Form Responses 1!A2:J',
   }, function(err, response) {
     if (err) {
       console.log('The API returned an error: ' + err);
@@ -121,16 +120,15 @@ function listRegistrations(auth) {
     if (rows.length == 0) {
       console.log('No data found.');
     } else {
-      console.log("data",rows)
-
-      console.log('Name, Major:');
+ 
       for (var i = 0; i < rows.length; i++) {
         var row = rows[i];
         // Print columns A and E, which correspond to indices 0 and 4.
         console.log('%s,%s,%s,%s,%s,%s,%s', row[1],row[2],row[3],row[4],row[5],row[6],row[7]);
       }
-      checkTamilMonth(auth)
-      
+      console.log("Calling Check Tamil Month")
+      checkTamilMonth(auth,response.values)
+  
   }
   });
 
@@ -138,44 +136,41 @@ function listRegistrations(auth) {
 }
 
 
-function checkTamilMonth(auth){
-console.log('In Tamil Month')
-fs.readFile(TAMIL_CALENDAR_DATA, function processTamilMonths(err, content) {
-  if (err) {
-    console.log('Error loading caledar file: ' + err);
-    return;
-  }
-  var calendarData=JSON.parse(content)
-  console.log('Data from Tamil Calendar',calendarData[0])
-  updateSheet(auth)
+function checkTamilMonth(auth,listOfPeople){
+  var vedamUtils=new VedamUtils()
+  var calendarData = vedamUtils.readCalendarData()
+  var nakshatramBdayToday=vedamUtils.getNakshatraBDayReminders(listOfPeople)
+  console.log("Nakshatram and Month Birthday Today Users",nakshatramBdayToday)
 
-});
-
-
-
+    if(nakshatramBdayToday!==undefined && nakshatramBdayToday.length>0){
+      updateSheetForNakshatram(auth,nakshatramBdayToday)
+    } 
 }
 
 
-function updateSheet(auth){
-  console.log('IN update Sheets')
+function updateSheetForNakshatram(auth,nakshatramBdayToday){
+  console.log('IN update Sheets For Nakshatram and Month Birthday')
   var spreadsheetId = '17VagNnpcMoWULGfF08AMFpEKB5uwo7b2-jP7b5KzhIA';
-  var collToUpdate=7
+  var collToUpdate=8
   var rowToUpdate=1
   var requests = [];
+  var vedamUtils=new VedamUtils()
+ for (i = 0; i < nakshatramBdayToday.length; i++) {
   requests.push({
   updateCells: {
-  start: {sheetId: 962028053, rowIndex: rowToUpdate, columnIndex: collToUpdate},
+  start: {sheetId: 962028053, rowIndex: nakshatramBdayToday[i][10]+1, columnIndex: collToUpdate},
     rows: [{
       values: [{
-        userEnteredValue: {stringValue: 'Mail Sent'},
-        userEnteredFormat: {backgroundColor: {green: 1}}
+        userEnteredValue: {stringValue: 'Mail Sent'}
       }]
     }],
-    fields: 'userEnteredValue,userEnteredFormat.backgroundColor'
+    fields: 'userEnteredValue'
   }
 });
-
-console.log('Created Request for update')
+  vedamUtils.sendEmailForNakshtramBDay(nakshatramBdayToday[i][1],nakshatramBdayToday[i][5],nakshatramBdayToday[i][3],nakshatramBdayToday[i][2])
+}
+ 
+console.log('Created Request for update mail sent nakshatram and month bday')
 var batchUpdateRequest = {requests: requests}
 var sheets = google.sheets('v4');
 
@@ -186,15 +181,8 @@ sheets.spreadsheets.batchUpdate({
 }, function(err, response) {
   if(err) {
     // Handle error
-    console.log(err);
+    console.log("Error while Updating Sheets for nakshatram and month bday",err);
   }
-  console.log('Updated Successfully')
-  var vedamUtils=new VedamUtils()
-//  vedamUtils.sendEmail('Sudharshun','vsethuraman@yahoo.com','Avittam','Aavani')
-        
-//  sendEmail('sudharshun@email.com')
+  console.log('Sheets Updated Successfully for Nakshatram and month bday')
 });
-
-
 }
-

@@ -78,6 +78,27 @@ class VedamUtils {
     }
 
 
+      getNakshatraBDayReminders(listOfPeople) {
+        var birthdayRemindersNakMonth = []
+        var today = this.getTamilToday()
+
+        let tamilMonth = today.Month
+        let tamilStar = today.Star
+        console.log('Matching -->', tamilStar)
+
+        listOfPeople.forEach(function (person, index) {
+            //    console.log("--->" + index);
+            person[10] = index
+        });
+
+        birthdayRemindersNakMonth = listOfPeople.filter(function (elem) {
+            return (elem[3].toUpperCase() === tamilStar.toUpperCase()  && elem[2].toUpperCase() === tamilMonth.toUpperCase() && elem[7] !== undefined && elem[8] === undefined );
+        });
+
+        return birthdayRemindersNakMonth
+    }
+
+
     getReminderNotSet(listOfPeople) {
         var reminderNotSet = []
         listOfPeople.forEach(function (person, index) {
@@ -183,9 +204,35 @@ class VedamUtils {
         var htmlBody = 'Greetings '+name+' !!<br/><br/>' +
             'Thank you for supporting our VRNT Veda samrakshanam scheme <br/>'
             + '<b>We would like to wish you on your Janmanakshatram:' + nakshatram + '</b><br/>'
-            + '<br/>Below is a summary of your information registered:<br/>'
             + '<br/><br/><br/><b>Kanchi Shankara Kamakoti Shankara</b> !!'
             + '<br/><br/>Best regards,'
+            + '<br/>KKSF Midwest Chapter'
+        // setup e-mail data with unicode symbols
+        var mailOptions = {
+            from: '"KKSF Midwest Vedasamrakshanam" <kksfvedasamrakshanam@gmail.com>', // sender address
+            to: emailId, // list of receivers
+            subject: 'Vedasamrakshanam Reminder' + name, // Subject line
+            html: htmlBody
+            // html body
+        };
+
+        // send mail with defined transport object
+        smtpTransport.sendMail(mailOptions, function (error, info) {
+            if (error) {
+                return console.log(error);
+            }
+            console.log('Message sent: ' + info.response);
+        });
+    }
+
+       sendEmailForNakshtramBDay(name, emailId, nakshatram, month) {
+        console.log('Sending email to ' + emailId)
+
+        var htmlBody = 'Greetings '+name+' !!<br/><br/>' +
+            'Thank you for supporting our VRNT Veda samrakshanam scheme <br/>'
+            + '<b>We would like to wish you on your Janmanakshatram:' + nakshatram + ' on '+month+'</b><br/>'
+            + '<br/><br/><br/><b>Kanchi Shankara Kamakoti Shankara</b> !!'
+            + '<br/><br/>Best Wishes,'
             + '<br/>KKSF Midwest Chapter'
         // setup e-mail data with unicode symbols
         var mailOptions = {
